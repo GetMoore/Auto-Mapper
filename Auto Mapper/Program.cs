@@ -18,6 +18,7 @@ namespace Auto_Mapper
             {
                 cfg.CreateMap<Employee, EmployeeDto>()
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"));
+
             });
         }
     }
